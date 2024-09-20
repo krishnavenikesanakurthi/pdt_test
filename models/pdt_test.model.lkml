@@ -4,7 +4,7 @@ connection: "thelook"
 include: "/views/**/*.view.lkml"
 
 datagroup: orders_datagroup_krish {
-  sql_trigger: SELECT max(orders.order_id) FROM orders ;;
+  sql_trigger: SELECT max(orders.id) FROM orders ;;
   max_cache_age: "2 minutes"
 }
 
